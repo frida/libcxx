@@ -1,0 +1,6 @@
+[submodule "libcxx"]
+	path = libcxx
+	url = https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxx.git
+[submodule "libcxxabi"]
+	path = libcxxabi
+	url = https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxxabi.git
