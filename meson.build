@@ -266,6 +266,7 @@ cpp_options = [
 
 cpp_args = [
   '-nostdinc++',
+  '-fno-aligned-allocation',
   '-D_LIBCPP_BUILDING_LIBRARY',
 ]
 
