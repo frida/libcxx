@@ -1,9 +1,16 @@
 project('libcxx', 'cpp')
 
 abi_srcdir = 'libcxxabi' / 'src'
+abi_incdir = 'libcxxabi' / 'include'
 lib_srcdir = 'libcxx' / 'src'
 lib_incdir = 'libcxx' / 'include'
 
+install_headers([
+    abi_incdir / 'cxxabi.h',
+    abi_incdir / '__cxxabi_config.h',
+  ],
+  subdir: 'c++',
+)
 install_headers([
     lib_incdir / '__bit_reference',
     lib_incdir / '__bsd_locale_defaults.h',
